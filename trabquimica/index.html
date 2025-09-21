@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seleneto de Cádmio</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Seleneto de Cádmio</h1>
+  </header>
+
+  <section id="menu">
+    <img src="img/cadmiobanner.webp" alt="cadmiobanner" id="cadmiobanner">
+  </section>
+
+  <section id="curiosidades">
+    <h2>Curiosidades</h2>
+    <p id="curiosidadeTexto">O seleneto de cádmio(CdSe) é um composto químico formado por cádmio(Z48) e Selênio(Z34).
+      Cádmio foi descoberto em 1817 por Friedrich Stromeyer e Karl Samuel, e Selênio por Jöns Jacob.
+      Seleneto de Cádmio é um material semicondutor muito importante na tecnologia, mas deve ser manipulado com cuidado devido à sua toxicidade.
+    </p>
+  </section>
+
+  <main id="quiz">
+   
+    <section id="questao1" class="questao">
+      <h3>1) O Seleneto de Cádmio (CdSe) é muito usado em que tipo de tecnologia?</h3>
+      <button onclick="verificarResposta(1,'solar')">Painéis Solares</button>
+      <button onclick="verificarResposta(1,'cosmeticos')">Cosméticos</button>
+      <button onclick="verificarResposta(1,'alimentos')">Conservantes Alimentícios</button>
+      <p id="feedback1" class="feedback"></p>
+    </section>
+
+  
+    <section id="questao2" class="questao escondido">
+      <h3>2) Qual a principal característica óptica do CdSe?</h3>
+      <label><input type="radio" name="q2" value="transparente"> Transparência total</label><br>
+      <label><input type="radio" name="q2" value="fluorescencia"> Fluorescência em nanocristais</label><br>
+      <label><input type="radio" name="q2" value="radioativo"> Radioatividade natural</label><br>
+      <button onclick="verificarResposta(2)">Confirmar</button>
+      <p id="feedback2" class="feedback"></p>
+    </section>
+
+  
+    <section id="questao3" class="questao escondido">
+      <h3>3) O CdSe é considerado:</h3>
+      <select id="resposta3">
+        <option value="">Selecione</option>
+        <option value="seguro">Seguro e inofensivo</option>
+        <option value="toxico">Tóxico e perigoso se manuseado incorretamente</option>
+        <option value="nutritivo">Essencial como nutriente humano</option>
+      </select>
+      <button onclick="verificarResposta(3)">Enviar</button>
+      <p id="feedback3" class="feedback"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Site educativo sobre Seleneto de Cádmio</p>
+  </footer>
+
+  <script src="js/codigo.js"></script>
+</body>
+</html>
